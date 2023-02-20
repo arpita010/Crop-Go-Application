@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image upload</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top:10rem;
+        }
+    </style>
+</head>
+
+<body>
+     <form action="http://localhost:8080/upload" method="post" id="crop-image-form" name="crop-image-form" enctype="multipart/form-data">
+        <label for="crop-image">Upload crop click</label><br><br>
+        <input type="file" accept=".jpg,.png" name="crop-image" id="crop-image">
+        <!-- //multiple if required -->
+        <br>
+        <br>
+        <br>
+        <!-- <input type="text" name="text" id="text" placeholder="Enter"> -->
+        <button type="submit">Upload Image</button>
+    </form>
+</body>
+</html>
